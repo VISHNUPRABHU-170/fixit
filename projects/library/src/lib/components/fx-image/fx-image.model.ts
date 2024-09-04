@@ -1,7 +1,8 @@
 export interface ImageComponentModel {
   path: ImageType,
   altText: string,
-  routerLink?: string
+  routerLink?: string,
+  className?: string
 }
 
 export enum ImageType {

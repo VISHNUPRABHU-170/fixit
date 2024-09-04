@@ -5,7 +5,9 @@ import { LinkComponentModel } from "projects/library/src/lib/components/fx-link/
 
 export const imageConfig: ImageComponentModel = {
   path: ImageType.FIXIT,
-  altText: ImageType.FIXIT
+  altText: ImageType.FIXIT,
+  routerLink: 'home',
+  className: 'image-link'
 };
 
 export const buttonConfig: ButtonComponentModel = {
@@ -21,7 +23,7 @@ const homeLinkConfig: LinkComponentModel = {
 
 const serviceLinkConfig: LinkComponentModel = {
   text: 'Service',
-  routerLink: 'service',
+  routerLink: 'services',
   className: 'nav-link'
 };
 
