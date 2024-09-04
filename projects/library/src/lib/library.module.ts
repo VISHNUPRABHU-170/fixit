@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { ButtonComponent } from './components/fx-button/fx-button.component';
 import { ImageComponent } from './components/fx-image/fx-image.component';
 import { LinkComponent } from './components/fx-link/fx-link.component';
-import { AppRoutingModule } from 'src/app/app-routing.module';
+import { FxRoutingModule } from 'projects/fixit/routing/fx-routing.module';
 
 @NgModule({
   declarations: [
@@ -11,7 +11,7 @@ import { AppRoutingModule } from 'src/app/app-routing.module';
     LinkComponent
   ],
   imports: [
-    AppRoutingModule
+    FxRoutingModule
   ],
   exports: [
     ButtonComponent,

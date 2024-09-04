@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FixitModule } from 'projects/fixit/fixit-module.module';
 
@@ -10,7 +9,6 @@ import { FixitModule } from 'projects/fixit/fixit-module.module';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
     FixitModule
   ],
   providers: [],
