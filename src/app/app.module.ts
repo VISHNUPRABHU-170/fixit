@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { LibraryModule } from './libraries/library-module.module';
+import { FixitModule } from 'projects/fixit/fixit-module.module';
 
 @NgModule({
   declarations: [
@@ -11,7 +11,7 @@ import { LibraryModule } from './libraries/library-module.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    LibraryModule
+    FixitModule
   ],
   providers: [],
   bootstrap: [AppComponent]
