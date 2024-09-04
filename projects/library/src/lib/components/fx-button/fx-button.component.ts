@@ -8,4 +8,10 @@ import { ButtonComponentModel } from './fx-button.model';
 })
 export class ButtonComponent {
   @Input() data!: ButtonComponentModel;
+
+  ngOnInit(): void {
+    //Called after the constructor, initializing input properties, and the first call to ngOnChanges.
+    //Add 'implements OnInit' to the class.
+    console.log(this.data);
+  }
 }

@@ -1,5 +1,30 @@
 a {
   text-decoration: none;
-  color: black;
+  color: #000000;
   font-size: 18px;
+
+  &.nav-link {
+    position: relative;
+    display: inline-block;
+    font-weight: 500;
+
+    &:hover {
+      color: #000000;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      bottom: -8px;
+      left: 0;
+      background-color: #A62139;
+      transition: width 0.3s ease-in-out;
+    }
+
+    &:hover::after {
+      width: 100%;
+    }
+  }
 }

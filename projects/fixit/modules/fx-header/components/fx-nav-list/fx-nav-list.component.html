@@ -1,0 +1,10 @@
+<ng-container *ngIf="data">
+  <nav>
+    <ul class="nav-list">
+      <li *ngFor="let list of data.navList" class="list">
+        <fx-link [data]="list"></fx-link>
+      </li>
+    </ul>
+  </nav>
+</ng-container>
+
