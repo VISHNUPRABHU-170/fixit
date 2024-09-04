@@ -4,12 +4,14 @@ import { ImageComponent } from './components/fx-image/fx-image.component';
 import { LinkComponent } from './components/fx-link/fx-link.component';
 import { FxRoutingModule } from 'projects/fixit/routing/fx-routing.module';
 import { CommonModule } from '@angular/common';
+import { InputComponent } from './components/fx-input/fx-input.component';
 
 @NgModule({
   declarations: [
     ButtonComponent,
     ImageComponent,
-    LinkComponent
+    LinkComponent,
+    InputComponent
   ],
   imports: [
     CommonModule,
@@ -18,7 +20,8 @@ import { CommonModule } from '@angular/common';
   exports: [
     ButtonComponent,
     ImageComponent,
-    LinkComponent
+    LinkComponent,
+    InputComponent
   ]
 })
 export class LibraryModule { }

@@ -20,7 +20,9 @@ export enum ImageType {
   CCTV_SERVICE = 'CCTV_SERVICE',
   QUICK_REPAIR = 'QUICK_REPAIR',
   AVAILABILITY = 'AVAILABILITY',
-  EXPERT_TECHNICIANS = 'EXPERT_TECHNICIANS'
+  EXPERT_TECHNICIANS = 'EXPERT_TECHNICIANS',
+  LAPTOP_SERVICE_HOME = 'LAPTOP_SERVICE_HOME',
+  SEARCH_BUTTON = 'SEARCH_BUTTON'
 }
 
 export const IMAGE_TYPE_MAPPER: {[key: string]: string} = {};
@@ -40,5 +42,5 @@ IMAGE_TYPE_MAPPER[ImageType.CCTV_SERVICE] = 'assets/images/cctv_service.png';
 IMAGE_TYPE_MAPPER[ImageType.QUICK_REPAIR] = 'assets/images/quick_repair.png';
 IMAGE_TYPE_MAPPER[ImageType.AVAILABILITY] = 'assets/images/availability.png';
 IMAGE_TYPE_MAPPER[ImageType.EXPERT_TECHNICIANS] = 'assets/images/expert_technicians.png';
-
-
+IMAGE_TYPE_MAPPER[ImageType.LAPTOP_SERVICE_HOME] = 'assets/images/laptop_service2.png';
+IMAGE_TYPE_MAPPER[ImageType.SEARCH_BUTTON] = 'assets/images/search_button.png';

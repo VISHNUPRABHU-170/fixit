@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { laptopServiceImageConfig, searchButtonImageConfig, inputConfig } from './config';
 
 @Component({
   selector: 'fx-search',
@@ -6,5 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./fx-search.component.scss']
 })
 export class FxSearchComponent {
-
+  laptopServiceImageConfig = laptopServiceImageConfig;
+  searchButtonImageConfig = searchButtonImageConfig;
+  inputConfig = inputConfig;
 }

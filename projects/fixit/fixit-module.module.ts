@@ -14,6 +14,7 @@ import { FxAboutUsComponent } from './modules/fx-content/components/fx-about-us/
 import { FxContactUsComponent } from './modules/fx-content/components/fx-contact-us/fx-contact-us.component';
 import { FxSearchComponent } from './modules/fx-content/components/fx-home/components/fx-search/fx-search.component';
 import { FxServicesListComponent } from './modules/fx-content/components/fx-home/components/fx-services-list/fx-services-list.component';
+import { FxHomeViewComponent } from './modules/fx-content/components/fx-home/components/fx-home-view/fx-home-view.component';
 
 
 
@@ -30,7 +31,8 @@ import { FxServicesListComponent } from './modules/fx-content/components/fx-home
     FxAboutUsComponent,
     FxContactUsComponent,
     FxSearchComponent,
-    FxServicesListComponent
+    FxServicesListComponent,
+    FxHomeViewComponent
   ],
   imports: [
     CommonModule,
