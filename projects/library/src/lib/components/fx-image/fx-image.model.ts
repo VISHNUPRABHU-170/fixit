@@ -14,6 +14,8 @@ export enum ImageType {
   TIMER = 'TIMER',
   LOGIN_PHONE = 'LOGIN_PHONE',
   ARROW_RIGHT = 'ARROW_RIGHT',
+  ARROW_RIGHT_NAV = 'ARROW_RIGHT_NAV',
+  ARROW_LEFT_NAV = 'ARROW_LEFT_NAV',
   LAPTOP_SERVICE = 'LAPTOP_SERVICE',
   COMPUTER_SERVICE = 'COMPUTER_SERVICE',
   ELECTRICIAN_SERVICE = 'ELECTRICIAN_SERVICE',
@@ -21,8 +23,11 @@ export enum ImageType {
   QUICK_REPAIR = 'QUICK_REPAIR',
   AVAILABILITY = 'AVAILABILITY',
   EXPERT_TECHNICIANS = 'EXPERT_TECHNICIANS',
-  LAPTOP_SERVICE_HOME = 'LAPTOP_SERVICE_HOME',
-  SEARCH_BUTTON = 'SEARCH_BUTTON'
+  LAPTOP_SERVICE_BACKGROUND = 'LAPTOP_SERVICE_HOME',
+  SEARCH_BUTTON = 'SEARCH_BUTTON',
+  COMPUTER_SERVICE_REPAIR_BACKGROUND = 'COMPUTER_SERVICE_REPAIR_BACKGROUND',
+  STANDARD_QUALITY = 'STANDARD_QUALITY',
+  ELECTRIC_REPAIR = 'ELECTRIC_REPAIR'
 }
 
 export const IMAGE_TYPE_MAPPER: {[key: string]: string} = {};
@@ -35,6 +40,8 @@ IMAGE_TYPE_MAPPER[ImageType.PHONE] = 'assets/images/phone.png';
 IMAGE_TYPE_MAPPER[ImageType.TIMER] = 'assets/images/timer.png';
 IMAGE_TYPE_MAPPER[ImageType.LOGIN_PHONE] = 'assets/images/login_phone.png';
 IMAGE_TYPE_MAPPER[ImageType.ARROW_RIGHT] = 'assets/images/arrow_right.png';
+IMAGE_TYPE_MAPPER[ImageType.ARROW_RIGHT_NAV] = 'assets/images/arrow_right_nav.png';
+IMAGE_TYPE_MAPPER[ImageType.ARROW_LEFT_NAV] = 'assets/images/arrow_left_nav.png';
 IMAGE_TYPE_MAPPER[ImageType.LAPTOP_SERVICE] = 'assets/images/laptop_service.png';
 IMAGE_TYPE_MAPPER[ImageType.COMPUTER_SERVICE] = 'assets/images/computer_service.png';
 IMAGE_TYPE_MAPPER[ImageType.ELECTRICIAN_SERVICE] = 'assets/images/electrician_service.png';
@@ -42,5 +49,8 @@ IMAGE_TYPE_MAPPER[ImageType.CCTV_SERVICE] = 'assets/images/cctv_service.png';
 IMAGE_TYPE_MAPPER[ImageType.QUICK_REPAIR] = 'assets/images/quick_repair.png';
 IMAGE_TYPE_MAPPER[ImageType.AVAILABILITY] = 'assets/images/availability.png';
 IMAGE_TYPE_MAPPER[ImageType.EXPERT_TECHNICIANS] = 'assets/images/expert_technicians.png';
-IMAGE_TYPE_MAPPER[ImageType.LAPTOP_SERVICE_HOME] = 'assets/images/laptop_service2.png';
+IMAGE_TYPE_MAPPER[ImageType.LAPTOP_SERVICE_BACKGROUND] = 'assets/images/laptop_service2.png';
 IMAGE_TYPE_MAPPER[ImageType.SEARCH_BUTTON] = 'assets/images/search_button.png';
+IMAGE_TYPE_MAPPER[ImageType.COMPUTER_SERVICE_REPAIR_BACKGROUND] = 'assets/images/computer_repair.png';
+IMAGE_TYPE_MAPPER[ImageType.STANDARD_QUALITY] = 'assets/images/standard_quality.png';
+IMAGE_TYPE_MAPPER[ImageType.ELECTRIC_REPAIR] = 'assets/images/electric_repair.png';

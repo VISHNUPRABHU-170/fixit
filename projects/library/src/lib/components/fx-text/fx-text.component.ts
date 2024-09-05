@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { TextComponentModel } from './fx-text.model';
+import { TEXT_COLOR_MAPPER, TEXT_SIZE_MAPPER, TextComponentModel } from './fx-text.model';
 
 @Component({
   selector: 'fx-text',
@@ -8,4 +8,6 @@ import { TextComponentModel } from './fx-text.model';
 })
 export class TextComponent {
   @Input() data!: TextComponentModel;
+  TEXT_SIZE_MAPPER = TEXT_SIZE_MAPPER;
+  TEXT_COLOR_MAPPER = TEXT_COLOR_MAPPER;
 }

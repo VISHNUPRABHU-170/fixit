@@ -15,6 +15,11 @@ import { FxContactUsComponent } from './modules/fx-content/components/fx-contact
 import { FxSearchComponent } from './modules/fx-content/components/fx-home/components/fx-search/fx-search.component';
 import { FxServicesListComponent } from './modules/fx-content/components/fx-home/components/fx-services-list/fx-services-list.component';
 import { FxHomeViewComponent } from './modules/fx-content/components/fx-home/components/fx-home-view/fx-home-view.component';
+import { FxStandardQualityCardComponent } from './modules/fx-content/components/fx-about-us/components/fx-standard-quality-card/fx-standard-quality-card.component';
+import { FxAboutUsCardComponent } from './modules/fx-content/components/fx-about-us/components/fx-about-us-card/fx-about-us-card.component';
+import { FxAboutUsViewComponent } from './modules/fx-content/components/fx-about-us/components/fx-about-us-view/fx-about-us-view.component';
+import { FxAdvertisementCardComponent } from './modules/fx-content/components/fx-about-us/components/fx-advertisement-card/fx-advertisement-card.component';
+import { FxCustomerReviewCarouselComponent } from './modules/fx-content/components/fx-about-us/components/fx-customer-review-carousel/fx-customer-review-carousel.component';
 
 
 
@@ -32,7 +37,12 @@ import { FxHomeViewComponent } from './modules/fx-content/components/fx-home/com
     FxContactUsComponent,
     FxSearchComponent,
     FxServicesListComponent,
-    FxHomeViewComponent
+    FxHomeViewComponent,
+    FxStandardQualityCardComponent,
+    FxAboutUsCardComponent,
+    FxAboutUsViewComponent,
+    FxAdvertisementCardComponent,
+    FxCustomerReviewCarouselComponent
   ],
   imports: [
     CommonModule,

@@ -1,4 +1,4 @@
-<div *ngIf="data" class="content">
+<div *ngIf="data" class="content" [class]="[data.className, TEXT_SIZE_MAPPER[data.textSize!], TEXT_COLOR_MAPPER[data.textColor!]]">
   <fx-image [data]="data.img" *ngIf="data.img"></fx-image>
   <span>{{ data.text }}</span>
 </div>

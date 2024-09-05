@@ -1,0 +1,20 @@
+.container {
+  width: 1440px;
+  display: flex;
+  gap: 32px;
+  align-items: center;
+  padding: 140px 120px 0px 120px;
+  box-sizing: border-box;
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .title-container {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+  }
+}
