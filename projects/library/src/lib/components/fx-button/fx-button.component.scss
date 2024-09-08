@@ -9,7 +9,7 @@
   font-weight: 500;
   position: relative;
   overflow: hidden;
-  transition: color .7s ease, border-color .7s ease;
+  transition: color .7s ease-in-out, border-color .7s ease-in-out;
 }
 
 .btn::before {

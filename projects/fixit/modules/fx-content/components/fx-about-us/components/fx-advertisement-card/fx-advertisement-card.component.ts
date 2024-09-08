@@ -1,10 +1,7 @@
 import { Component } from '@angular/core';
 import {
-  availabilityImageConfig,
   availabilityTextConfig,
-  expertTechniciansImageConfig,
   expertTechniciansTextConfig,
-  quickRepairImageConfig,
   quickRepairTextConfig
 } from './config';
 
@@ -14,9 +11,6 @@ import {
   styleUrls: ['./fx-advertisement-card.component.scss']
 })
 export class FxAdvertisementCardComponent {
-  quickRepairImageConfig = quickRepairImageConfig;
-  expertTechniciansImageConfig = expertTechniciansImageConfig;
-  availabilityImageConfig = availabilityImageConfig;
   quickRepairTextConfig = quickRepairTextConfig;
   expertTechniciansTextConfig = expertTechniciansTextConfig;
   availabilityTextConfig = availabilityTextConfig;
