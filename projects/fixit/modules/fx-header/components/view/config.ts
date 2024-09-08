@@ -41,4 +41,4 @@ const contactUsLinkConfig: LinkComponentModel = {
 
 export const navListConfig: FxNavListComponentModel = {
   navList: [homeLinkConfig, serviceLinkConfig, aboutUsLinkConfig, contactUsLinkConfig]
-}
+};

@@ -20,6 +20,10 @@ import { FxAboutUsCardComponent } from './modules/fx-content/components/fx-about
 import { FxAboutUsViewComponent } from './modules/fx-content/components/fx-about-us/components/fx-about-us-view/fx-about-us-view.component';
 import { FxAdvertisementCardComponent } from './modules/fx-content/components/fx-about-us/components/fx-advertisement-card/fx-advertisement-card.component';
 import { FxCustomerReviewCarouselComponent } from './modules/fx-content/components/fx-about-us/components/fx-customer-review-carousel/fx-customer-review-carousel.component';
+import { FxFooterServiceLinksComponent } from './modules/fx-footer/components/fx-footer-service-links/fx-footer-service-links.component';
+import { FxFooterQuickLinksComponent } from './modules/fx-footer/components/fx-footer-quick-links/fx-footer-quick-links.component';
+import { FxFooterContactComponent } from './modules/fx-footer/components/fx-footer-contact/fx-footer-contact.component';
+import { FxFooterViewComponent } from './modules/fx-footer/components/view/view.component';
 
 
 
@@ -42,7 +46,11 @@ import { FxCustomerReviewCarouselComponent } from './modules/fx-content/componen
     FxAboutUsCardComponent,
     FxAboutUsViewComponent,
     FxAdvertisementCardComponent,
-    FxCustomerReviewCarouselComponent
+    FxCustomerReviewCarouselComponent,
+    FxFooterViewComponent,
+    FxFooterServiceLinksComponent,
+    FxFooterQuickLinksComponent,
+    FxFooterContactComponent
   ],
   imports: [
     CommonModule,

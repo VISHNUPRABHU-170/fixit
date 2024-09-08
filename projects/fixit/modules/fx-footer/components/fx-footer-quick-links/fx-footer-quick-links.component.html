@@ -1,0 +1,12 @@
+<ng-container *ngIf="data">
+  <ul class="quick-links-list">
+    <li class="quick-links-list-item title">
+      <fx-text [data]="data.title"></fx-text>
+    </li>
+    <ng-container *ngFor="let list of data.links">
+      <li class="quick-links-list-item">
+        <fx-link [data]="list"></fx-link>
+      </li>
+    </ng-container>
+  </ul>
+</ng-container>

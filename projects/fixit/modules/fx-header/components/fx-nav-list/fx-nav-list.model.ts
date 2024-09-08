@@ -2,4 +2,4 @@ import { LinkComponentModel } from "projects/library/src/lib/components/fx-link/
 
 export interface FxNavListComponentModel {
   navList: LinkComponentModel[];
-}
+};
