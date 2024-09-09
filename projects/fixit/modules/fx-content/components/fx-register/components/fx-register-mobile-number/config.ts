@@ -23,7 +23,7 @@ const phoneImageConfig: ImageComponentModel = {
 export const inputConfig: InputComponentModel = {
   label: 'Enter your Mobile number',
   img: phoneImageConfig,
-  className: 'input'
+  className: 'input-login'
 };
 
 export const getOTPButtonConfig: ButtonComponentModel = {

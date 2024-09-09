@@ -27,7 +27,9 @@ export enum ImageType {
   SEARCH_BUTTON = 'SEARCH_BUTTON',
   COMPUTER_SERVICE_REPAIR_BACKGROUND = 'COMPUTER_SERVICE_REPAIR_BACKGROUND',
   STANDARD_QUALITY = 'STANDARD_QUALITY',
-  ELECTRIC_REPAIR = 'ELECTRIC_REPAIR'
+  ELECTRIC_REPAIR = 'ELECTRIC_REPAIR',
+  STAR_UNRATED = 'STAR_UNRATED',
+  STAR_RATED = 'STAR_RATED'
 }
 
 export const IMAGE_TYPE_MAPPER: {[key: string]: string} = {};
@@ -54,3 +56,5 @@ IMAGE_TYPE_MAPPER[ImageType.SEARCH_BUTTON] = 'assets/images/search_button.png';
 IMAGE_TYPE_MAPPER[ImageType.COMPUTER_SERVICE_REPAIR_BACKGROUND] = 'assets/images/computer_repair.png';
 IMAGE_TYPE_MAPPER[ImageType.STANDARD_QUALITY] = 'assets/images/standard_quality.png';
 IMAGE_TYPE_MAPPER[ImageType.ELECTRIC_REPAIR] = 'assets/images/electric_repair.png';
+IMAGE_TYPE_MAPPER[ImageType.STAR_UNRATED] = 'assets/images/star_unrated.png';
+IMAGE_TYPE_MAPPER[ImageType.STAR_RATED] = 'assets/images/star_rated.png';

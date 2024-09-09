@@ -1,0 +1,39 @@
+.contact-container {
+  padding: 140px 120px;
+  display: flex;
+  justify-content: center;
+
+  .card {
+    width: 690px;
+    height: 710px;
+    padding: 36px;
+    box-sizing: border-box;
+    border-radius: 15px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+
+    .input-description {
+      width: 380px;
+      height: 167px;
+      padding: 22px 20px;
+      background-color: #ffffff;
+      color: #515151;
+      box-sizing: border-box;
+      font-family: "Montserrat", sans-serif;
+      font-size: 18px;
+      font-weight: normal;
+      border-radius: 12px;
+      border: 1px solid #D2D2D2;
+      outline: none;
+      resize: none;
+    }
+
+    .rating-container {
+      display: flex;
+      gap: 25px;
+    }
+  }
+}
