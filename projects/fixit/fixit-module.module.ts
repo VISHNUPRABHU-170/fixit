@@ -24,6 +24,9 @@ import { FxFooterServiceLinksComponent } from './modules/fx-footer/components/fx
 import { FxFooterQuickLinksComponent } from './modules/fx-footer/components/fx-footer-quick-links/fx-footer-quick-links.component';
 import { FxFooterContactComponent } from './modules/fx-footer/components/fx-footer-contact/fx-footer-contact.component';
 import { FxFooterViewComponent } from './modules/fx-footer/components/view/view.component';
+import { FxRegisterComponent } from './modules/fx-content/components/fx-register/fx-register.component';
+import { FxRegisterOtpComponent } from './modules/fx-content/components/fx-register/components/fx-register-otp/fx-register-otp.component';
+import { FxRegisterMobileNumberComponent } from './modules/fx-content/components/fx-register/components/fx-register-mobile-number/fx-register-mobile-number.component';
 
 
 
@@ -50,7 +53,10 @@ import { FxFooterViewComponent } from './modules/fx-footer/components/view/view.
     FxFooterViewComponent,
     FxFooterServiceLinksComponent,
     FxFooterQuickLinksComponent,
-    FxFooterContactComponent
+    FxFooterContactComponent,
+    FxRegisterComponent,
+    FxRegisterOtpComponent,
+    FxRegisterMobileNumberComponent
   ],
   imports: [
     CommonModule,

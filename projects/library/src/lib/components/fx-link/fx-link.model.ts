@@ -1,5 +1,5 @@
 export interface LinkComponentModel {
   text: string,
-  routerLink: string,
+  routerLink?: string,
   className?: string
 }

@@ -1,0 +1,14 @@
+<div class="container">
+  <fx-text [data]="contentThreeConfig"></fx-text>
+  <div class="input-container">
+    <input #otp1 type="text" maxlength="1" (keydown)="moveToNext($event, otp2)">
+    <input #otp2 type="text" maxlength="1" (keydown)="moveToNext($event, otp3)">
+    <input #otp3 type="text" maxlength="1" (keydown)="moveToNext($event, otp4)">
+    <input #otp4 type="text" maxlength="1">
+  </div>
+  <fx-button [data]="verifyButtonConfig" (click)="onVerify()"></fx-button>
+  <div class="content-container">
+    <fx-text [data]="contentFourConfig"></fx-text>
+    <fx-link [data]="linkConfig"></fx-link>
+  </div>
+</div>

@@ -14,7 +14,8 @@ export enum TextSize {
   LG = 'SM',
   XL = 'XL',
   XXL = 'XXL',
-  XXXL = 'XXXL'
+  XXXL = 'XXXL',
+  XXXXL = 'XXXXL'
 }
 
 export enum TextColor {
@@ -31,6 +32,7 @@ TEXT_SIZE_MAPPER[TextSize.LG] = 'text-large';
 TEXT_SIZE_MAPPER[TextSize.XL] = 'text-x-large';
 TEXT_SIZE_MAPPER[TextSize.XXL] = 'text-xx-large';
 TEXT_SIZE_MAPPER[TextSize.XXXL] = 'text-xxx-large';
+TEXT_SIZE_MAPPER[TextSize.XXXXL] = 'text-xxxx-large';
 
 export const TEXT_COLOR_MAPPER: { [key: string]: string; } = {};
 

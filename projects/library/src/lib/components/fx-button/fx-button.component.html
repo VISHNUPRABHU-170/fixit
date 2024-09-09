@@ -1,5 +1,5 @@
 <ng-container *ngIf="data">
-  <button [routerLink]="data.routerLink" class="btn">
+  <button [routerLink]="data.routerLink" class="btn" (click)="onClick()">
     <span>{{ data.text }}</span>
   </button>
 </ng-container>

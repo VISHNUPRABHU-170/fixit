@@ -12,7 +12,7 @@ export const imageConfig: ImageComponentModel = {
 
 export const buttonConfig: ButtonComponentModel = {
   text: 'Register',
-  routerLink: 'login'
+  routerLink: 'register'
 };
 
 const homeLinkConfig: LinkComponentModel = {

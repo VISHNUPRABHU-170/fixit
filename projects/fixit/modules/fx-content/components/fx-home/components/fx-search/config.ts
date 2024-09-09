@@ -20,11 +20,11 @@ export const inputConfig: InputComponentModel = {
 
 export const textConfig1: TextComponentModel = {
   text: 'From Screens to Security,',
-  textSize: TextSize.XXXL,
+  textSize: TextSize.XXXXL,
   textColor: TextColor.PRIMARY
 };
 
 export const textConfig2: TextComponentModel = {
   text: "We've Got You Covered.",
-  textSize: TextSize.XXXL
+  textSize: TextSize.XXXXL
 };

@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { ButtonComponentModel } from './fx-button.model';
 
 @Component({
@@ -8,10 +8,9 @@ import { ButtonComponentModel } from './fx-button.model';
 })
 export class ButtonComponent {
   @Input() data!: ButtonComponentModel;
+  @Output() event: EventEmitter<any> = new EventEmitter();
 
-  ngOnInit(): void {
-    //Called after the constructor, initializing input properties, and the first call to ngOnChanges.
-    //Add 'implements OnInit' to the class.
-    console.log(this.data);
+  onClick() {
+    this.event.emit();
   }
 }
