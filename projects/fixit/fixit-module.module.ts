@@ -27,6 +27,7 @@ import { FxFooterViewComponent } from './modules/fx-footer/components/view/view.
 import { FxRegisterComponent } from './modules/fx-content/components/fx-register/fx-register.component';
 import { FxRegisterOtpComponent } from './modules/fx-content/components/fx-register/components/fx-register-otp/fx-register-otp.component';
 import { FxRegisterMobileNumberComponent } from './modules/fx-content/components/fx-register/components/fx-register-mobile-number/fx-register-mobile-number.component';
+import { FxSearchCardResultComponent } from './modules/fx-content/components/fx-home/components/fx-search/components/fx-search-card-result/fx-search-card-result.component';
 
 
 
@@ -56,7 +57,8 @@ import { FxRegisterMobileNumberComponent } from './modules/fx-content/components
     FxFooterContactComponent,
     FxRegisterComponent,
     FxRegisterOtpComponent,
-    FxRegisterMobileNumberComponent
+    FxRegisterMobileNumberComponent,
+    FxSearchCardResultComponent
   ],
   imports: [
     CommonModule,

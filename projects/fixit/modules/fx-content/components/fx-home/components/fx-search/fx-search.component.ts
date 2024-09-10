@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { laptopServiceImageConfig, searchButtonImageConfig, inputConfig, textConfig1, textConfig2 } from './config';
+import { laptopServiceImageConfig, searchButtonImageConfig, inputConfig, textConfigOne, textConfigTwo } from './config';
 
 @Component({
   selector: 'fx-search',
@@ -10,6 +10,12 @@ export class FxSearchComponent {
   laptopServiceImageConfig = laptopServiceImageConfig;
   searchButtonImageConfig = searchButtonImageConfig;
   inputConfig = inputConfig;
-  textConfig1 = textConfig1;
-  textConfig2 = textConfig2;
+  textConfigOne = textConfigOne;
+  textConfigTwo = textConfigTwo;
+
+  isSearchFocused = false;
+
+  onFocus() {
+    this.isSearchFocused = !this.isSearchFocused;
+  }
 }

@@ -7,12 +7,13 @@
   <div class="box-container">
     <div class="box">
       <div class="text-container">
-        <fx-text [data]="textConfig1"></fx-text>
-        <fx-text [data]="textConfig2"></fx-text>
+        <fx-text [data]="textConfigOne"></fx-text>
+        <fx-text [data]="textConfigTwo"></fx-text>
       </div>
       <div class="search-container">
-        <fx-input [data]="inputConfig"></fx-input>
+        <fx-input [data]="inputConfig" (event)="onFocus()"></fx-input>
         <fx-image [data]="searchButtonImageConfig"></fx-image>
+        <fx-search-card-result class="search-card" *ngIf="isSearchFocused"></fx-search-card-result>
       </div>
     </div>
   </div>

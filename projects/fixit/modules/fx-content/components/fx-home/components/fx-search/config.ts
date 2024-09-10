@@ -18,13 +18,13 @@ export const inputConfig: InputComponentModel = {
   className: 'search'
 };
 
-export const textConfig1: TextComponentModel = {
+export const textConfigOne: TextComponentModel = {
   text: 'From Screens to Security,',
   textSize: TextSize.XXXXL,
   textColor: TextColor.PRIMARY
 };
 
-export const textConfig2: TextComponentModel = {
+export const textConfigTwo: TextComponentModel = {
   text: "We've Got You Covered.",
   textSize: TextSize.XXXXL
 };
