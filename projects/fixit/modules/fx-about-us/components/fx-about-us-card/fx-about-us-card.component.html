@@ -1,11 +1,21 @@
 <div class="container">
+
   <div class="content">
+
     <div class="title-container">
+
       <fx-text [data]="titleConfig"></fx-text>
+
       <fx-text [data]="subTitleConfig"></fx-text>
+
     </div>
+
     <fx-text [data]="contentConfig"></fx-text>
-    <fx-button [data]="buttonConfig"></fx-button>
+
+    <fx-button [data]="buttonConfig" (event)="onClickExploreServices(buttonConfig)"></fx-button>
+
   </div>
+
   <fx-image [data]="imageConfig"></fx-image>
+  
 </div>
