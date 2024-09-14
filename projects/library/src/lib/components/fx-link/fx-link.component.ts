@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { LinkComponentModel } from './fx-link.model';
 
 @Component({
@@ -8,4 +8,9 @@ import { LinkComponentModel } from './fx-link.model';
 })
 export class LinkComponent {
   @Input() data!: LinkComponentModel;
+  @Output() event: EventEmitter<any> = new EventEmitter();
+
+  onClick() {
+    this.event.emit();
+  }
 }

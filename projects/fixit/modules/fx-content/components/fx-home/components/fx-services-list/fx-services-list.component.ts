@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { arrowRightImageConfig, cctvServiceImageConfig, computerServiceImageConfig, electricianServiceImageConfig, laptopServiceImageConfig } from './config';
 
 @Component({
-  selector: 'fx-service-list',
+  selector: 'fx-home-service-list',
   templateUrl: './fx-services-list.component.html',
   styleUrls: ['./fx-services-list.component.scss']
 })

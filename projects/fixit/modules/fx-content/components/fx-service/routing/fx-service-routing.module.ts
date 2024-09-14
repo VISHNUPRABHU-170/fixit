@@ -3,7 +3,7 @@ import { RouterModule } from '@angular/router';
 import { routes } from './fx-route';
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class FxRoutingModule {}
+export class FxServiceRoutingModule { }

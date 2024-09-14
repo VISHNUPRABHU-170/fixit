@@ -9,7 +9,6 @@ import { FxNavListComponent } from './modules/fx-header/components/fx-nav-list/f
 import { FxHeaderViewComponent } from './modules/fx-header/components/view/view.component';
 import { FxContentComponent } from './modules/fx-content/fx-content.component';
 import { FxHomeComponent } from './modules/fx-content/components/fx-home/fx-home.component';
-import { FxServiceComponent } from './modules/fx-content/components/fx-service/fx-service.component';
 import { FxAboutUsComponent } from './modules/fx-content/components/fx-about-us/fx-about-us.component';
 import { FxContactUsComponent } from './modules/fx-content/components/fx-contact-us/fx-contact-us.component';
 import { FxSearchComponent } from './modules/fx-content/components/fx-home/components/fx-search/fx-search.component';
@@ -30,7 +29,6 @@ import { FxRegisterMobileNumberComponent } from './modules/fx-content/components
 import { FxSearchCardResultComponent } from './modules/fx-content/components/fx-home/components/fx-search/components/fx-search-card-result/fx-search-card-result.component';
 
 
-
 @NgModule({
   declarations: [
     ViewComponent,
@@ -40,7 +38,6 @@ import { FxSearchCardResultComponent } from './modules/fx-content/components/fx-
     FxHeaderComponent,
     FxNavListComponent,
     FxHomeComponent,
-    FxServiceComponent,
     FxAboutUsComponent,
     FxContactUsComponent,
     FxSearchComponent,

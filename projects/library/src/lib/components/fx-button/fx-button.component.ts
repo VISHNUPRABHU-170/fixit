@@ -11,7 +11,6 @@ export class ButtonComponent {
   @Output() event: EventEmitter<any> = new EventEmitter();
 
   onClick() {
-    console.log("yes...");
     this.event.emit();
   }
 }
