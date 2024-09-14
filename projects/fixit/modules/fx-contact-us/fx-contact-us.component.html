@@ -1,16 +1,29 @@
 <div class="contact-container">
+
   <div class="card">
-    <fx-text [data]="titleConfig"></fx-text>
-    <fx-text [data]="subTitleConfig"></fx-text>
-    <fx-input [data]="nameInputConfig"></fx-input>
-    <fx-input [data]="mailIDInputConfig"></fx-input>
+
+    <fx-text [data]="data.title"></fx-text>
+
+    <fx-text [data]="data.subTitle"></fx-text>
+
+    <fx-input [data]="data.name"></fx-input>
+
+    <fx-input [data]="data.mailId"></fx-input>
+
     <textarea class="input-description" placeholder="Enter your Suggestions"></textarea>
-    <fx-text [data]="rateUsConfig"></fx-text>
+
+    <fx-text [data]="data.ratingTitle"></fx-text>
+
     <div class="rating-container">
-      <ng-container *ngFor="let item of ratingConfig; let i=index">
+
+      <ng-container *ngFor="let item of data.ratingContent; let i=index">
         <fx-image [data]="item" (event)="onRateUs(i)"></fx-image>
       </ng-container>
+
     </div>
-    <fx-button [data]="submitButtonConfig"></fx-button>
+
+    <fx-button [data]="data.submit"></fx-button>
+
   </div>
+
 </div>

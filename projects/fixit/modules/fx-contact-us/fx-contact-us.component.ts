@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { mailIDInputConfig, nameInputConfig, rateUsConfig, starRatedImageConfig, starUnRatedImageConfig, submitButtonConfig, subTitleConfig, titleConfig } from './config';
+import { starRatedImageConfig, starUnRatedImageConfig, contactUsConfig } from './config';
 
 @Component({
   selector: 'app-fx-contact-us',
@@ -7,16 +7,12 @@ import { mailIDInputConfig, nameInputConfig, rateUsConfig, starRatedImageConfig,
   styleUrls: ['./fx-contact-us.component.scss']
 })
 export class FxContactUsComponent {
-  titleConfig = titleConfig;
-  subTitleConfig = subTitleConfig;
-  rateUsConfig = rateUsConfig;
-  nameInputConfig = nameInputConfig;
-  mailIDInputConfig = mailIDInputConfig;
-  submitButtonConfig = submitButtonConfig;
-  ratingConfig = [starUnRatedImageConfig, starUnRatedImageConfig, starUnRatedImageConfig, starUnRatedImageConfig, starUnRatedImageConfig];
+  data = contactUsConfig;
+  starRatedImageConfig = starRatedImageConfig;
+  starUnRatedImageConfig = starUnRatedImageConfig;
 
   onRateUs(index: number) {
-    this.ratingConfig = this.ratingConfig.map((item, ind) => {
+    this.data.ratingContent = this.data.ratingContent.map((item, ind) => {
       return ind <= index ? starRatedImageConfig : starUnRatedImageConfig;
     });
   }
