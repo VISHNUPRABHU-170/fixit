@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { buttonConfig, imageConfig, textConfig } from './config';
+import { FxNavigateService } from 'projects/fixit/core/services/fx-navigate-service.service';
+import { ButtonComponentModel } from 'projects/library/src/lib/components/fx-button/fx-button.model';
 
 @Component({
   selector: 'fx-standard-quality-card',
@@ -10,4 +12,10 @@ export class FxStandardQualityCardComponent {
   imageConfig = imageConfig;
   buttonConfig = buttonConfig;
   textConfig = textConfig;
+
+  constructor (private router: FxNavigateService) { }
+
+  onClickExploreServices(data: ButtonComponentModel) {
+    this.router.onNavigate(data.routerLink!);
+  }
 }

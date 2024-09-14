@@ -1,6 +1,6 @@
 import { ButtonComponentModel } from "projects/library/src/lib/components/fx-button/fx-button.model";
 import { ImageComponentModel, ImageType } from "projects/library/src/lib/components/fx-image/fx-image.model";
-import { TextColor, TextComponentModel, TextSize } from "projects/library/src/lib/components/fx-text/fx-text.model";
+import { TextComponentModel } from "projects/library/src/lib/components/fx-text/fx-text.model";
 
 export const titleConfig: TextComponentModel = {
   text: 'ABOUT US',

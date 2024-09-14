@@ -4,7 +4,7 @@ import { FxAboutUsComponent } from './fx-about-us.component';
 import { FxStandardQualityCardComponent } from './components/fx-standard-quality-card/fx-standard-quality-card.component';
 import { FxCustomerReviewCarouselComponent } from './components/fx-customer-review-carousel/fx-customer-review-carousel.component';
 import { FxAdvertisementCardComponent } from './components/fx-advertisement-card/fx-advertisement-card.component';
-import { FxAboutUsViewComponent } from './components/fx-about-us-view/fx-about-us-view.component';
+import { FxAboutUsViewComponent } from './components/view/view.component';
 import { FxAboutUsCardComponent } from './components/fx-about-us-card/fx-about-us-card.component';
 import { LibraryModule } from 'projects/library/src/lib/library.module';
 import { FxAboutUsRoutingModule } from './routing/fx-service-routing.module';
