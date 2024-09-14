@@ -1,0 +1,8 @@
+<ul class="list" *ngIf="data">
+  <li class="list-item list-title">
+    <fx-text [data]="data.title"></fx-text>
+  </li>
+  <li *ngFor="let list of data.links" class="list-item">
+    <fx-link [data]="list"></fx-link>
+  </li>
+</ul>

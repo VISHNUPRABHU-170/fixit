@@ -2,8 +2,7 @@ import { ImageComponentModel, ImageType } from "projects/library/src/lib/compone
 import { LinkComponentModel } from "projects/library/src/lib/components/fx-link/fx-link.model";
 import { TextComponentModel, TextSize } from "projects/library/src/lib/components/fx-text/fx-text.model";
 import { FxFooterContactModel } from "../fx-footer-contact/fx-footer-contact.model";
-import { FxFooterServiceLinksModel } from "../fx-footer-service-links/fx-footer-service-links.model";
-import { FxFooterQuickLinksModel } from "../fx-footer-quick-links/fx-footer-quick-links.model";
+import { FxFooterLinksModel } from "../fx-footer-links/fx-footer-links.model";
 
 const imageConfig: ImageComponentModel = {
   path: ImageType.FIXIT,
@@ -85,7 +84,7 @@ const servicesTitleConfig: TextComponentModel = {
   className: 'title'
 };
 
-export const servicesLinksConfig: FxFooterServiceLinksModel = {
+export const servicesLinksConfig: FxFooterLinksModel = {
   title: servicesTitleConfig,
   links: [laptopServiceLinkConfig, computerServiceLinkConfig, electricianServiceLinkConfig, cctvServiceLinkConfig]
 };
@@ -113,7 +112,7 @@ const quickLinkTitleConfig: TextComponentModel = {
   className: 'title'
 };
 
-export const quickLinksConfig: FxFooterQuickLinksModel = {
+export const quickLinksConfig: FxFooterLinksModel = {
   title: quickLinkTitleConfig,
   links: [servicesLinkConfig, aboutUsLinkConfig, contactUsLinkConfig]
 };

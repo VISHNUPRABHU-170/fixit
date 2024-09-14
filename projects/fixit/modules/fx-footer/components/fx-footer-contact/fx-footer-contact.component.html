@@ -1,10 +1,8 @@
 <div class="footer-contact-section" *ngIf="data">
   <fx-image [data]="data.img"></fx-image>
   <ul class="footer-contact-section-list">
-    <ng-container *ngFor="let list of data.details">
-      <li class="footer-contact-section-list-item">
-        <fx-text [data]="list"></fx-text>
-      </li>
-    </ng-container>
+    <li *ngFor="let list of data.details" class="footer-contact-section-list-item">
+      <fx-text [data]="list"></fx-text>
+    </li>
   </ul>
 </div>
