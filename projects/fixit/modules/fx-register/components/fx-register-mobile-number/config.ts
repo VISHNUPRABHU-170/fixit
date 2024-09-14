@@ -27,5 +27,6 @@ export const inputConfig: InputComponentModel = {
 };
 
 export const getOTPButtonConfig: ButtonComponentModel = {
-  text: 'Get OTP'
+  text: 'Get OTP',
+  routerLink: 'register/otp-verification'
 };

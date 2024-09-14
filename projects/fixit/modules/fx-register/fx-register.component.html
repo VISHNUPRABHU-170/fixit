@@ -1,12 +1,1 @@
-<div class="register-container">
-  <div class="card">
-    <fx-text [data]="titleConfig"></fx-text>
-    <fx-image [data]="loginImageConfig"></fx-image>
-    <ng-container *ngIf="!isOTPVerification">
-      <fx-register-mobile-number (event)="onGetOTP()"></fx-register-mobile-number>
-    </ng-container>
-    <ng-container *ngIf="isOTPVerification">
-      <fx-register-otp (event)="onVerify()"></fx-register-otp>
-    </ng-container>
-  </div>
-</div>
+<fx-register-view></fx-register-view>

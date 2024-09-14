@@ -1,27 +1,39 @@
-.container {
+.register-container {
+  padding: 140px 120px;
   display: flex;
-  gap: 36px;
-  flex-direction: column;
-  align-items: center;
+  justify-content: center;
 
-  .input-container {
+  .card {
+    width: 690px;
+    height: 690px;
+    padding: 56px;
+    box-sizing: border-box;
+    border-radius: 15px;
+    background-color: #ffffff;
     display: flex;
-    gap: 28px;
-
-    input {
-      width: 64px;
-      height: 64px;
-      font-size: 18px;
-      text-align: center;
-      border-radius: 15px;
-      border: 1px solid #D2D2D2;
-      outline: none;
-    }
-  }
-
-  .content-container {
-    display: flex;
-    gap: 6px;
+    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
+
+    .input-container {
+      display: flex;
+      gap: 28px;
+
+      input {
+        width: 64px;
+        height: 64px;
+        font-size: 18px;
+        text-align: center;
+        border-radius: 15px;
+        border: 1px solid #D2D2D2;
+        outline: none;
+      }
+    }
+
+    .content-container {
+      display: flex;
+      gap: 6px;
+      align-items: center;
+    }
   }
 }

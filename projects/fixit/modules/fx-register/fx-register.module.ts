@@ -5,6 +5,8 @@ import { FxRegisterComponent } from './fx-register.component';
 import { FxRegisterOtpComponent } from './components/fx-register-otp/fx-register-otp.component';
 import { FxRegisterMobileNumberComponent } from './components/fx-register-mobile-number/fx-register-mobile-number.component';
 import { FxRegisterRoutingModule } from './routing/fx-register-routing.module';
+import { FxRegisterViewComponent } from './components/view/view.component';
+import { FxRegisterHeaderComponent } from './components/fx-register-header/fx-register-header.component';
 
 
 
@@ -12,7 +14,9 @@ import { FxRegisterRoutingModule } from './routing/fx-register-routing.module';
   declarations: [
     FxRegisterComponent,
     FxRegisterOtpComponent,
-    FxRegisterMobileNumberComponent
+    FxRegisterMobileNumberComponent,
+    FxRegisterViewComponent,
+    FxRegisterHeaderComponent
   ],
   imports: [
     CommonModule,

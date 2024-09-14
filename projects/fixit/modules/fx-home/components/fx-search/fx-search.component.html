@@ -13,7 +13,7 @@
       <div class="search-container">
         <fx-input [data]="inputConfig" (event)="onFocus()"></fx-input>
         <fx-image [data]="searchButtonImageConfig"></fx-image>
-        <fx-search-card-result class="search-card" *ngIf="isSearchFocused"></fx-search-card-result>
+        <fx-search-card-result *ngIf="isSearchFocused" class="search-card"></fx-search-card-result>
       </div>
     </div>
   </div>
