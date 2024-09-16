@@ -10,6 +10,7 @@
   position: relative;
   overflow: hidden;
   transition: color .6s ease-in-out, border-color .7s ease-in-out;
+  white-space: nowrap;
 }
 
 .btn::before {

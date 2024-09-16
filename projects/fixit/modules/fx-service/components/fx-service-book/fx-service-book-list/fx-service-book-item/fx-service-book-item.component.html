@@ -1,0 +1,8 @@
+<div class="container" *ngIf="data">
+  <fx-text [data]="data.title"></fx-text>
+  <fx-text [data]="data.price"></fx-text>
+  <div class="sub-container">
+    <fx-text [data]="data.description"></fx-text>
+    <fx-button [data]="data.bookService"></fx-button>
+  </div>
+</div>

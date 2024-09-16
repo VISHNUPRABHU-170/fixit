@@ -1,0 +1,9 @@
+<div class="container">
+  <fx-text [data]="titleConfig"></fx-text>
+  <div class="service-list">
+    <ng-container *ngFor="let item of laptopServiceListConfig">
+      <fx-service-book-item [data]="item"></fx-service-book-item>
+      <div class="break-line"></div>
+    </ng-container>
+  </div>
+</div>

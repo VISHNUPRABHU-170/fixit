@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { serviceListConfigs } from './config';
+import { FxNavigateService } from 'projects/fixit/core/services/fx-navigate-service.service';
 
 @Component({
   selector: 'fx-service-list',
@@ -9,7 +10,9 @@ import { serviceListConfigs } from './config';
 export class FxServiceListComponent {
   serviceListConfigs = serviceListConfigs;
 
+  constructor(private router: FxNavigateService) {}
+
   onClickService() {
-    
+    this.router.onNavigate('services/book-service')
   }
 }

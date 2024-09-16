@@ -30,7 +30,11 @@ export enum ImageType {
   ELECTRIC_REPAIR = 'ELECTRIC_REPAIR',
   STAR_UNRATED = 'STAR_UNRATED',
   STAR_RATED = 'STAR_RATED',
-  SEARCH_ICON = 'SEARCH_ICON'
+  SEARCH_ICON = 'SEARCH_ICON',
+  LAPTOP_SERVICE_NAVIGATE = 'LAPTOP_SERVICE_NAVIGATE',
+  COMPUTER_SERVICE_NAVIGATE = 'COMPUTER_SERVICE_NAVIGATE',
+  ELECTRICIAN_SERVICE_NAVIGATE = 'ELECTRICIAN_SERVICE_NAVIGATE',
+  CCTV_SERVICE_NAVIGATE = 'CCTV_SERVICE_NAVIGATE'
 }
 
 export const IMAGE_TYPE_MAPPER: {[key: string]: string} = {};
@@ -60,3 +64,8 @@ IMAGE_TYPE_MAPPER[ImageType.ELECTRIC_REPAIR] = 'assets/images/electric_repair.pn
 IMAGE_TYPE_MAPPER[ImageType.STAR_UNRATED] = 'assets/images/star_unrated.png';
 IMAGE_TYPE_MAPPER[ImageType.STAR_RATED] = 'assets/images/star_rated.png';
 IMAGE_TYPE_MAPPER[ImageType.SEARCH_ICON] = 'assets/images/search_icon.png';
+IMAGE_TYPE_MAPPER[ImageType.LAPTOP_SERVICE_NAVIGATE] = 'assets/images/laptop_service_navigate.png';
+IMAGE_TYPE_MAPPER[ImageType.COMPUTER_SERVICE_NAVIGATE] = 'assets/images/computer_service_navigate.png';
+IMAGE_TYPE_MAPPER[ImageType.ELECTRICIAN_SERVICE_NAVIGATE] = 'assets/images/electrician_service_navigate.png';
+IMAGE_TYPE_MAPPER[ImageType.CCTV_SERVICE_NAVIGATE] = 'assets/images/cctv_service_navigate.png';
+

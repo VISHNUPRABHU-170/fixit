@@ -1,0 +1,13 @@
+<div class="container">
+  <div class="title-container">
+    <fx-text [data]="data.title"></fx-text>
+  </div>
+  <div class="content-container">
+    <div *ngFor="let item of data.navList" class="content">
+      <div class="box">
+        <fx-image [data]="item.img"></fx-image>
+      </div>
+      <fx-text [data]="item.title"></fx-text>
+    </div>
+  </div>
+</div>

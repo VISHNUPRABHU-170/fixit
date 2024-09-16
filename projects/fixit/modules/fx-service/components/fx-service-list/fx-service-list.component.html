@@ -1,13 +1,21 @@
 <div class="service-list-container">
+
   <div class="service-list">
-    <ng-container *ngFor="let item of serviceListConfigs">
-      <div class="card" (click)="onClickService()">
-        <div class="container">
-          <fx-image [data]="item.icon"></fx-image>
-          <fx-text [data]="item.title"></fx-text>
-        </div>
-        <fx-text [data]="item.content" class="link"></fx-text>
+
+    <div class="card" *ngFor="let item of serviceListConfigs" (click)="onClickService()">
+
+      <div class="container">
+
+        <fx-image [data]="item.icon"></fx-image>
+
+        <fx-text [data]="item.title"></fx-text>
+
       </div>
-    </ng-container>
+
+      <fx-text [data]="item.content" class="link"></fx-text>
+
+    </div>
+
   </div>
+  
 </div>
