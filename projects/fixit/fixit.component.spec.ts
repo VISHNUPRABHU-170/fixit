@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ViewComponent } from './view.component';
+import { FixitComponent } from './fixit.component';
 
-describe('ViewComponent', () => {
-  let component: ViewComponent;
-  let fixture: ComponentFixture<ViewComponent>;
+describe('FixitComponent', () => {
+  let component: FixitComponent;
+  let fixture: ComponentFixture<FixitComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [ViewComponent]
+      declarations: [FixitComponent]
     });
-    fixture = TestBed.createComponent(ViewComponent);
+    fixture = TestBed.createComponent(FixitComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

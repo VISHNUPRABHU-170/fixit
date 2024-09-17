@@ -3,14 +3,14 @@ import { CommonModule } from '@angular/common';
 import { LibraryModule } from 'projects/library/src/lib/library.module';
 import { FxRoutingModule } from './routing/fx-routing.module';
 import { FxContactUsComponent } from './modules/fx-contact-us/fx-contact-us.component';
-import { FxViewComponent } from './modules/fx-view/fx-view.component';
 import { FxHeaderModule } from './modules/fx-header/fx-header.module';
 import { FxFooterModule } from './modules/fx-footer/fx-footer.module';
+import { FixitComponent } from './fixit.component';
 
 
 @NgModule({
   declarations: [
-    FxViewComponent,
+    FixitComponent,
     FxContactUsComponent
   ],
   imports: [
@@ -21,7 +21,7 @@ import { FxFooterModule } from './modules/fx-footer/fx-footer.module';
     FxFooterModule
   ],
   exports: [
-    FxViewComponent
+    FixitComponent
   ]
 })
 export class FixitModule { }

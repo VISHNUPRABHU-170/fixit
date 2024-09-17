@@ -57,19 +57,19 @@ export const contactConfig: FxFooterContactModel = {
 
 const laptopServiceLinkConfig: LinkComponentModel = {
   text: 'Laptop Service',
-  routerLink: '',
+  routerLink: 'services',
   className: 'footer-link'
 };
 
 const computerServiceLinkConfig: LinkComponentModel = {
   text: 'Computer Service',
-  routerLink: '',
+  routerLink: 'services',
   className: 'footer-link'
 };
 
 const electricianServiceLinkConfig: LinkComponentModel = {
   text: 'Electrician Service',
-  routerLink: '',
+  routerLink: 'services',
   className: 'footer-link'
 };
 
@@ -107,6 +107,12 @@ const contactUsLinkConfig: LinkComponentModel = {
   className: 'footer-link'
 };
 
+const registerLinkConfig: LinkComponentModel = {
+  text: 'Register',
+  routerLink: 'register',
+  className: 'footer-link'
+};
+
 const quickLinkTitleConfig: TextComponentModel = {
   text: 'QUICK LINK',
   className: 'title'
@@ -114,5 +120,5 @@ const quickLinkTitleConfig: TextComponentModel = {
 
 export const quickLinksConfig: FxFooterLinksModel = {
   title: quickLinkTitleConfig,
-  links: [servicesLinkConfig, aboutUsLinkConfig, contactUsLinkConfig]
+  links: [registerLinkConfig, servicesLinkConfig, aboutUsLinkConfig, contactUsLinkConfig]
 };

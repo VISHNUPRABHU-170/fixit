@@ -2,11 +2,11 @@ import { Component, ElementRef, EventEmitter, Output, ViewChild } from '@angular
 import { contentFourConfig, contentThreeConfig, linkConfig, verifyButtonConfig } from './config';
 
 @Component({
-  selector: 'fx-register-otp',
-  templateUrl: './fx-register-otp.component.html',
-  styleUrls: ['./fx-register-otp.component.scss']
+  selector: 'fx-verify-otp',
+  templateUrl: './fx-verify-otp.component.html',
+  styleUrls: ['./fx-verify-otp.component.scss']
 })
-export class FxRegisterOtpComponent {
+export class FxVerifyOtpComponent {
 
   @Output() event: EventEmitter<any> = new EventEmitter();
 
