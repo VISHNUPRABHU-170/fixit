@@ -1,5 +1,5 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
-import { LinkComponentModel } from './fx-link.model';
+import { LINK_COMPONENT_EVENT_TYPE, LinkComponentModel, LinkComponentOutputEventModel } from './fx-link.model';
 
 @Component({
   selector: 'fx-link',
@@ -8,9 +8,13 @@ import { LinkComponentModel } from './fx-link.model';
 })
 export class LinkComponent {
   @Input() data!: LinkComponentModel;
-  @Output() event: EventEmitter<any> = new EventEmitter();
+  @Output() event: EventEmitter<LinkComponentOutputEventModel> = new EventEmitter();
 
   onClick() {
-    this.event.emit();
+    const outputData: LinkComponentOutputEventModel = {
+      data: this.data,
+      eventType: LINK_COMPONENT_EVENT_TYPE.ON_CLICK
+    }
+    this.event.emit(outputData);
   }
 }

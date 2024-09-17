@@ -1,5 +1,5 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
-import { ButtonComponentModel } from './fx-button.model';
+import { ButtonComponentModel, ButtonComponentOutputEventModel, BUTTON_COMPONENT_EVENT_TYPE } from './fx-button.model';
 
 @Component({
   selector: 'fx-button',
@@ -8,9 +8,13 @@ import { ButtonComponentModel } from './fx-button.model';
 })
 export class ButtonComponent {
   @Input() data!: ButtonComponentModel;
-  @Output() event: EventEmitter<any> = new EventEmitter();
+  @Output() event: EventEmitter<ButtonComponentOutputEventModel> = new EventEmitter();
 
   onClick() {
-    this.event.emit();
+    const outputData: ButtonComponentOutputEventModel = {
+      data: this.data,
+      eventType: BUTTON_COMPONENT_EVENT_TYPE.ON_CLICK
+    }
+    this.event.emit(outputData);
   }
 }

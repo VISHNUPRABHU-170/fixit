@@ -5,6 +5,15 @@ export interface ImageComponentModel {
   className?: string
 }
 
+export interface ImageComponentOutputEventModel {
+  data: ImageComponentModel;
+  eventType: IMAGE_COMPONENT_EVENT_TYPE;
+}
+
+export enum IMAGE_COMPONENT_EVENT_TYPE {
+  ON_CLICK = 'ON_CLICK'
+}
+
 export enum ImageType {
   LOGO = 'LOGO',
   FIXIT = 'FIXIT',
