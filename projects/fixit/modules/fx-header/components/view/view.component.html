@@ -1,5 +1,5 @@
 <div class="header-view-content">
-  <fx-image [data]="imageConfig" (event)="onNavigate(imageConfig)"></fx-image>
+  <fx-image [data]="imageConfig" (event)="onNavigate($event)"></fx-image>
   <fx-nav-list [data]="navListConfig"></fx-nav-list>
-  <fx-button [data]="buttonConfig" (event)="onNavigate(buttonConfig)"></fx-button>
+  <fx-button [data]="buttonConfig" (event)="onNavigate($event)"></fx-button>
 </div>

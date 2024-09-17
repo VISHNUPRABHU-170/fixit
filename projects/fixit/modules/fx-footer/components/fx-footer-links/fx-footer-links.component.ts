@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { FxFooterLinksModel } from './fx-footer-links.model';
-import { LinkComponentModel } from 'projects/library/src/lib/components/fx-link/fx-link.model';
+import { LinkComponentOutputEventModel } from 'projects/library/src/lib/components/fx-link/fx-link.model';
 import { FxNavigateService } from 'projects/fixit/core/services/fx-navigate-service.service';
 
 @Component({
@@ -13,7 +13,7 @@ export class FxFooterLinksComponent {
 
   constructor(private router: FxNavigateService) {}
 
-  onClick(data: LinkComponentModel) {
-    this.router.onNavigate(data.routerLink!);
+  onClick(outputData: LinkComponentOutputEventModel) {
+    this.router.onNavigate(outputData.data.routerLink!);
   }
 }

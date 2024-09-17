@@ -1,7 +1,7 @@
 <nav *ngIf="data">
   <ul class="nav-list">
     <li *ngFor="let list of data.navList" class="nav-list-item">
-      <fx-link [data]="list" (event)="onNavigate(list)"></fx-link>
+      <fx-link [data]="list" (event)="onNavigate($event)"></fx-link>
     </li>
   </ul>
 </nav>

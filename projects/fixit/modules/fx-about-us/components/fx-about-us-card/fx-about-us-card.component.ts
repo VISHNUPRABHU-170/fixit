@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { buttonConfig, contentConfig, imageConfig, subTitleConfig, titleConfig } from './config';
 import { FxNavigateService } from 'projects/fixit/core/services/fx-navigate-service.service';
-import { ButtonComponentModel } from 'projects/library/src/lib/components/fx-button/fx-button.model';
+import { ButtonComponentOutputEventModel } from 'projects/library/src/lib/components/fx-button/fx-button.model';
 
 @Component({
   selector: 'fx-about-us-card',
@@ -17,7 +17,7 @@ export class FxAboutUsCardComponent {
 
   constructor(private router: FxNavigateService) {}
 
-  onClickExploreServices(data: ButtonComponentModel) {
-    this.router.onNavigate(data.routerLink!)
+  onClickExploreServices(outputData: ButtonComponentOutputEventModel) {
+    this.router.onNavigate(outputData.data.routerLink!)
   }
 }

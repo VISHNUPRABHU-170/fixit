@@ -3,6 +3,6 @@
     <fx-text [data]="data.title"></fx-text>
   </li>
   <li *ngFor="let list of data.links" class="list-item">
-    <fx-link [data]="list" (event)="onClick(list)"></fx-link>
+    <fx-link [data]="list" (event)="onClick($event)"></fx-link>
   </li>
 </ul>
